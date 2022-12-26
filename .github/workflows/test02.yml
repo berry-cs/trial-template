@@ -12,6 +12,7 @@ defaults:
 jobs:
   build_and_test:
     name: Build and test assignment 2
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout Repository
