@@ -1,0 +1,23 @@
+name: compile_and_test_02
+
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build_and_test:
+    name: Build and test assignment 2
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+      - name: Compile and Test
+        run: ./scripts/test02.sh
+        
+    
